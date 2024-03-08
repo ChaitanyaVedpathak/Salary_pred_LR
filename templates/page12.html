@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<h1 align="center"><i><u>Salary Prediction Model</u></i></h1>
+</head>
+
+<body background='static/img.jpg'>
+	
+	<form method="post" action ="/predict_salary" >
+	<table bgcolor=#fff8dc  align="center" cellpadding = "15px" border=2>	 
+		<tr>
+		<td><font face = "Times New Roman" size = "4"><b>Total_Experience:</b></font></td>
+		<td><input type="text" name="Total_Experience" maxlength="3" placeholder='Enter your Total_Experience:'/></td>
+		</tr>
+		<td><font face = "Times New Roman" size = "4"><b>Team_Lead_Experience:</b></font></td>
+		<td><input type="text" name="Team_Lead_Experience" maxlength="3" placeholder='Enter Team_Lead_Experience'/>
+		</td>
+		</tr>
+		
+	
+		<tr>
+		<td><font face = "Times New Roman" size = "4" ><b>Project_Manager_Experience:</b></font></td>
+		<td><input type="text" name="Project_Manager_Experience" maxlength="2" placeholder='Enter Project_Manager_Experience'/>
+		</td>
+		</tr>
+
+               <tr>
+		<td><font face = "Times New Roman" size = "4" ><b>Certifications:</b></font></td>
+		<td><input type="text" name="Certifications" maxlength="2" placeholder='Enter Certifications'/>
+		</td>
+		</tr>
+		
+		<tr>
+		<td colspan="2" align="center">
+	    <input type="Submit" value="Predict"/>
+            <input type="reset">		
+		</td>
+		</tr>
+		
+	</table>
+</form>
+<h1 align="center" style="color: rgb(222, 101, 9); font-size: 40px;">{{ prediction_text }}</h1>
+</body>
+</html>
